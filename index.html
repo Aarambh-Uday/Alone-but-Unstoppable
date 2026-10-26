@@ -1,377 +1,902 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#080807">
-<meta name="description" content="Explore Alone But Unstoppable — Turning Pain Into Power by Shubham Bhardwaj. Discover 20 chapters on student struggles, overthinking, discipline, resilience and personal growth.">
-<title>Alone But Unstoppable | Shubham Bhardwaj</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080807">
+  <meta name="description" content="Alone But Unstoppable — Turning Pain Into Power by Shubham Bhardwaj. Discover a motivational journey through struggle, discipline, resilience and personal growth.">
+  <meta property="og:title" content="Alone But Unstoppable | Shubham Bhardwaj">
+  <meta property="og:description" content="Your story is still being written. Discover the book and begin your next chapter.">
+  <title>Alone But Unstoppable | Shubham Bhardwaj</title>
 
-<style>
-:root{
-  --bg:#080807;
-  --panel:#11110e;
-  --panel2:#171610;
-  --gold:#dfb86c;
-  --goldlight:#ffe7ad;
-  --white:#f7f2e8;
-  --muted:#b3aea3;
-  --line:rgba(223,184,108,.24);
-  --serif:Georgia,"Times New Roman",serif;
-}
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth;scroll-padding-top:90px}
-body{background:var(--bg);color:var(--white);font-family:Arial,Helvetica,sans-serif;line-height:1.7}
-a{color:inherit;text-decoration:none}
-img{max-width:100%;display:block}
-.container{width:min(1160px,90%);margin:auto}
-.gold{color:var(--gold)}
-.eyebrow{font-size:10px;font-weight:800;letter-spacing:3px;text-transform:uppercase;color:var(--gold)}
-h1,h2,h3{font-weight:500}
-h2{font-family:var(--serif);font-size:clamp(33px,4.5vw,55px);line-height:1.15;letter-spacing:-1px;margin:15px 0 20px}
-p{overflow-wrap:break-word}
-.lead{font-size:15px;color:var(--muted);max-width:760px}
-.center{text-align:center;margin-inline:auto}
-.center .lead{margin-inline:auto}
-section{padding:88px 0}
-.dark{background:#10100d;border-block:1px solid #ffffff0c}
-.topline{text-align:center;padding:8px 12px;background:#17130b;color:var(--goldlight);font-size:9px;letter-spacing:2px;text-transform:uppercase}
-header{position:sticky;top:0;z-index:100;background:#080807ed;backdrop-filter:blur(15px);border-bottom:1px solid #ffffff12}
-nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:18px}
-.brand{font-size:12px;font-weight:900;letter-spacing:2px;color:var(--gold)}
-.brand small{display:block;font-size:9px;letter-spacing:3px;color:var(--muted);font-weight:400}
-.navlinks{display:flex;gap:20px;align-items:center;flex-wrap:wrap;font-size:10px;color:#d8d2c5}
-.navlinks a:hover{color:var(--gold)}
-.navbuy{background:var(--gold);color:#111!important;padding:11px 14px;font-weight:900}
-.hero{position:relative;overflow:hidden;padding:88px 0;background:radial-gradient(ellipse at 85% 35%,#4a341b50,transparent 42%),linear-gradient(120deg,#080807,#100e09)}
-.hero-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:60px;align-items:center}
-h1{font-family:var(--serif);font-size:clamp(48px,6.7vw,82px);font-weight:400;line-height:.99;letter-spacing:-2.5px;margin:23px 0}
-h1 em{color:var(--gold);font-weight:400}
-.hero-lead{font-size:clamp(18px,2vw,22px);color:#e9e0cf;line-height:1.55}
-.hero-desc{color:var(--muted);font-size:14px;margin-top:18px}
-.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:27px}
-.btn{display:inline-flex;justify-content:center;align-items:center;min-height:48px;padding:14px 19px;font-size:10px;font-weight:900;letter-spacing:1.1px;text-align:center;border:1px solid transparent;transition:transform .2s}
-.btn:hover{transform:translateY(-3px)}
-.btn-gold{background:linear-gradient(120deg,var(--goldlight),#d1a04c);color:#171107}
-.btn-outline{border-color:#7c633b;color:var(--white)}
-.micro{font-size:10px;color:#908b80;margin-top:14px}
-.cover-frame{position:relative;padding:25px;border:1px solid #8b6b3c;background:linear-gradient(145deg,#1b1a15,#0a0a09);box-shadow:0 30px 90px #0009}
-.cover-frame:before{content:"";position:absolute;inset:8px;border:1px solid #dfb86c15;pointer-events:none}
-.cover-frame img{position:relative;width:100%;max-height:530px;object-fit:contain;filter:drop-shadow(0 20px 25px #0008)}
-.cover-caption{text-align:center;color:var(--gold);font-size:9px;letter-spacing:3px;margin-top:17px}
-.stats{border-block:1px solid var(--line);background:#0e0d0a}
-.stats-grid{display:grid;grid-template-columns:repeat(4,1fr)}
-.stat{text-align:center;padding:23px 8px;border-right:1px solid #ffffff12}
-.stat:last-child{border:0}
-.stat strong{display:block;font-family:var(--serif);font-size:27px;color:var(--gold);font-weight:400}
-.stat span{font-size:10px;color:var(--muted)}
-.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:35px}
-.card{padding:25px;border:1px solid var(--line);background:linear-gradient(145deg,#191812,#10100d);transition:.25s}
-.card:hover{transform:translateY(-4px);border-color:#d9b36b88}
-.card-no{color:var(--gold);font-size:10px;letter-spacing:2px;font-weight:900}
-.card h3{font-family:var(--serif);font-size:22px;font-weight:400;line-height:1.35;margin:13px 0 9px}
-.card p{color:var(--muted);font-size:13px}
-.part{padding:30px;border:1px solid var(--line);background:#13130f;margin-top:22px}
-.part-head{display:flex;gap:18px;align-items:flex-start;margin-bottom:23px}
-.part-number{font-family:var(--serif);font-size:44px;color:var(--gold);line-height:1}
-.part h3{font-family:var(--serif);font-size:25px;font-weight:400}
-.part-sub{font-size:10px;letter-spacing:2px;color:var(--gold);text-transform:uppercase;margin-top:6px}
-.chapter-list{display:grid;grid-template-columns:1fr 1fr;gap:0 28px}
-.chapter{display:flex;align-items:flex-start;gap:13px;padding:14px 0;border-top:1px solid #ffffff12}
-.chapter-num{font-size:11px;color:var(--gold);font-weight:800;min-width:23px}
-.chapter-name{font-size:13px;color:#e5dfd3;line-height:1.5}
-.part-intro{font-size:13px;color:var(--muted);margin:12px 0 20px}
-.bonus{margin-top:23px;padding:27px;border:1px solid #a9864d;background:radial-gradient(ellipse at right,#382719,#11110e 65%)}
-.bonus h3{font-family:var(--serif);font-size:25px;font-weight:400;margin:9px 0}
-.split{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
-.split p{color:var(--muted);margin:13px 0}
-.quote{padding:31px;border-left:2px solid var(--gold);background:linear-gradient(130deg,#211a10,#10100d);font-family:var(--serif);font-size:clamp(24px,3vw,36px);line-height:1.45}
-.quote small{display:block;color:var(--gold);font:10px Arial,sans-serif;letter-spacing:2px;margin-top:20px}
-.reader-grid{display:grid;grid-template-columns:1fr 1fr;gap:15px;margin-top:30px}
-.reader{padding:22px;border:1px solid #ffffff12;background:#151510}
-.reader h3{font-size:16px;margin-bottom:6px}
-.reader p{font-size:13px;color:var(--muted)}
-.author-card{padding:30px;border:1px solid var(--line);background:#141410}
-.author-card p{color:var(--muted);margin-top:13px}
-.gratitude-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-top:30px}
-.gratitude{padding:23px;border:1px solid var(--line);background:#13130f}
-.gratitude h3{font-family:var(--serif);font-size:20px;color:var(--gold);font-weight:400;margin-bottom:10px}
-.gratitude p,.publisher{font-size:13px;color:var(--muted)}
-.publisher{padding:21px;border:1px solid #ffffff12;margin-top:16px}
-.publisher strong{color:var(--white)}
-.purchase{background:radial-gradient(ellipse at 50% 0%,#3d2b16,transparent 60%),#090908}
-.purchase-box{max-width:840px;margin:32px auto 0;padding:clamp(26px,5vw,48px);border:1px solid #8d6c3a;background:#11110d;text-align:center;box-shadow:0 25px 80px #0006}
-.purchase-title{font-family:var(--serif);font-size:clamp(29px,4.5vw,47px);line-height:1.2}
-.purchase-sub{color:var(--gold);font-size:10px;letter-spacing:3px;margin-top:12px}
-.purchase-box .actions{justify-content:center}
-.smallprint{font-size:10px;color:#969084;margin-top:17px}
-.faq{max-width:820px;margin:30px auto 0}
-details{padding:19px 0;border-bottom:1px solid var(--line)}
-summary{cursor:pointer;font-weight:700;font-size:14px;margin-left:18px}
-summary::marker{color:var(--gold)}
-details p{font-size:13px;color:var(--muted);padding:12px 0 0 18px}
-.final{text-align:center;background:linear-gradient(180deg,#21190d,#090908);border-top:1px solid var(--line)}
-.final .lead{margin:auto}
-footer{padding:28px 0;background:#060606;border-top:1px solid #ffffff12}
-.footer-row{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
-.footer-brand{font-size:11px;color:var(--gold);letter-spacing:2px;font-weight:900}
-.footer-small{font-size:10px;color:#908b80}
-.reveal{animation:fadeup .8s both}
-@keyframes fadeup{from{opacity:0;transform:translateY(15px)}to{opacity:1;transform:translateY(0)}}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition:none!important}}
-@media(max-width:800px){
- .hero{padding:60px 0}
- .hero-grid,.split{grid-template-columns:1fr;gap:30px}
- .cover-frame{max-width:480px;margin:auto}
- .grid3,.gratitude-grid{grid-template-columns:1fr}
- .nav{padding:14px 0;align-items:flex-start}
- .navlinks{gap:10px;justify-content:flex-end}
- .navlinks a{font-size:9px}
- section{padding:65px 0}
- .part{padding:22px}
-}
-@media(max-width:500px){
- nav{flex-direction:column}
- .navlinks{justify-content:flex-start}
- .chapter-list,.reader-grid{grid-template-columns:1fr}
- .actions{flex-direction:column}
- .btn{width:100%}
- .cover-frame{padding:16px}
- .stat strong{font-size:22px}
- .stat span{font-size:9px}
- .part-number{font-size:34px}
-}
-</style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
 </head>
 
 <body>
-<div class="topline">A motivational journey from struggle to transformation</div>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-<header>
-<nav class="container">
-  <a class="brand" href="#home">ALONE BUT UNSTOPPABLE
-    <small>TURNING PAIN INTO POWER</small>
-  </a>
-  <div class="navlinks">
-    <a href="#journey">THE JOURNEY</a>
-    <a href="#chapters">CHAPTERS</a>
-    <a href="#author">AUTHOR</a>
-    <a href="#faq">FAQ</a>
-    <a class="navbuy" href="#buy">EXPLORE THE BOOK ↗</a>
+  <div class="announcement-bar">
+    <span>✦</span>
+    <span>A BOOK FOR THE DAYS YOU NEED TO REMEMBER YOUR STRENGTH</span>
+    <span>✦</span>
   </div>
-</nav>
-</header>
 
-<main>
-<section class="hero" id="home">
-  <div class="container hero-grid">
-    <div class="reveal">
-      <div class="eyebrow">For the student who keeps trying</div>
-      <h1>YOUR STRUGGLE.<br>YOUR STRENGTH.<br><em>YOUR STORY.</em></h1>
-      <p class="hero-lead">You have survived difficult days. Now discover what you can learn from them.</p>
-      <p class="hero-desc">
-        <strong>Alone But Unstoppable — Turning Pain Into Power</strong> by
-        Shubham Bhardwaj explores the hidden struggles students face—from
-        pressure and self-doubt to discipline, resilience and personal growth.
-      </p>
-      <div class="actions">
-        <a class="btn btn-gold" href="#buy">EXPLORE THE BOOK ↗</a>
-        <a class="btn btn-outline" href="#chapters">SEE ALL 20 CHAPTERS ↓</a>
-      </div>
-      <p class="micro">A motivational book for reflection, perseverance and the journey ahead.</p>
-    </div>
+  <header class="site-header" id="top">
+    <a class="brand" href="#home" aria-label="Alone But Unstoppable home">
+      <span class="brand-monogram">A<span>B</span>U</span>
+      <span class="brand-name">
+        <strong>ALONE BUT UNSTOPPABLE</strong>
+        <small>TURNING PAIN INTO POWER</small>
+      </span>
+    </a>
 
-    <div class="cover-frame reveal">
-      <img src="IMG_17813657597238498.jpg"
-        alt="Alone But Unstoppable — Turning Pain Into Power by Shubham Bhardwaj">
-      <div class="cover-caption">FROM PAIN TO PURPOSE</div>
-    </div>
-  </div>
-</section>
+    <button class="menu-toggle" id="menuToggle" type="button"
+      aria-label="Open navigation" aria-expanded="false"
+      aria-controls="siteNav">
+      <span></span>
+      <span></span>
+      <span class="visually-hidden">Menu</span>
+    </button>
 
-<div class="stats">
-  <div class="container stats-grid">
-    <div class="stat"><strong>04</strong><span>PARTS</span></div>
-    <div class="stat"><strong>20</strong><span>CHAPTERS</span></div>
-    <div class="stat"><strong>01</strong><span>BONUS SECTION</span></div>
-    <div class="stat"><strong>YOU</strong><span>YOUR NEXT CHAPTER</span></div>
-  </div>
-</div>
+    <nav class="site-nav" id="siteNav" aria-label="Main navigation">
+      <a href="#message">The Message</a>
+      <a href="#journey">Inside the Book</a>
+      <a href="#author">The Author</a>
+      <a href="#faq">FAQ</a>
+      <a class="nav-purchase" href="#get-book">Get the Book <span>↗</span></a>
+    </nav>
+  </header>
 
-<section id="journey">
-  <div class="container split">
-    <div class="reveal">
-      <div class="eyebrow">The journey inside</div>
-      <h2>From understanding your struggle to shaping your future.</h2>
-      <p>
-        Student life can involve more than lessons, assignments and exams.
-        There can also be expectations, comparison, fear of failure and
-        thoughts that are difficult to explain to others.
-      </p>
-      <p>
-        This book is organised as a four-part journey: first recognising
-        those struggles, then examining the inner battles, shifting your
-        mindset and finally focusing on habits and transformation.
-      </p>
-      <p>
-        Explore the chapter list below to see the subjects covered before
-        deciding whether the book is right for you.
-      </p>
-      <div class="actions">
-        <a class="btn btn-gold" href="#chapters">EXPLORE THE CONTENTS ↓</a>
-      </div>
-    </div>
-    <div class="quote reveal">
-      “The hardest battles are sometimes fought in silence — inside the mind of a student trying not to give up.”
-      <small>FROM THE BOOK'S OPENING MESSAGE</small>
-    </div>
-  </div>
-</section>
+  <main id="main">
 
-<section class="dark" id="chapters">
-  <div class="container">
-    <div class="center">
-      <div class="eyebrow">Inside the book</div>
-      <h2>Twenty Chapters. <span class="gold">Four Stages of Growth.</span></h2>
-      <p class="lead">
-        Explore the book's actual chapter titles and follow its progression
-        from student struggles to a more focused and resilient mindset.
-      </p>
-    </div>
+    <!-- HERO: PREMIUM BOOK INTRODUCTION -->
+    <section class="hero section-wrap" id="home">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">
+          <span class="eyebrow-line"></span>
+          A MOTIVATIONAL BOOK BY SHUBHAM BHARDWAJ
+        </p>
 
-    <div class="part">
-      <div class="part-head">
-        <div class="part-number">I</div>
-        <div>
-          <div class="eyebrow">Understand the struggle</div>
-          <h3>The Struggle: Understanding Your Pain</h3>
-          <p class="part-intro">Begin by recognising the pressures and experiences that can make students feel misunderstood or overwhelmed.</p>
+        <h1>ALONE.<br><em>STILL</em><br>UNSTOPPABLE.</h1>
+
+        <p class="hero-subtitle">Turning Pain Into Power</p>
+
+        <p class="hero-description">
+          For the student carrying silent pressure. For the dreamer who has
+          questioned their own strength. For the person learning that one
+          difficult chapter does not have to define the entire story.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button button-gold" href="#get-book">
+            Discover the Book <span>↗</span>
+          </a>
+          <a class="quiet-link" href="#journey">
+            Explore the journey <span>↓</span>
+          </a>
+        </div>
+
+        <div class="hero-footnote">
+          <span></span>
+          <p>A reminder that your story is still being written.</p>
         </div>
       </div>
-      <div class="chapter-list">
-        <div class="chapter"><span class="chapter-num">01</span><span class="chapter-name">The Silent Battles Students Fight</span></div>
-        <div class="chapter"><span class="chapter-num">02</span><span class="chapter-name">Why No One Understands Your Pain</span></div>
-        <div class="chapter"><span class="chapter-num">03</span><span class="chapter-name">Feeling Lost in a Competitive World</span></div>
-        <div class="chapter"><span class="chapter-num">04</span><span class="chapter-name">Pressure from Family &amp; Expectations</span></div>
-        <div class="chapter"><span class="chapter-num">05</span><span class="chapter-name">When You Feel Like Giving Up</span></div>
+
+      <div class="hero-art reveal">
+        <div class="hero-halo halo-one"></div>
+        <div class="hero-halo halo-two"></div>
+
+        <div class="hero-art-caption top-caption">
+          THE JOURNEY WITHIN
+        </div>
+
+        <div class="book-stage">
+          <div class="book-shadow"></div>
+
+          <div class="book-cover-frame">
+            <img
+              class="book-cover"
+              src="IMG_17813657597238498.jpg"
+              alt="Alone But Unstoppable — Turning Pain Into Power book cover"
+              onerror="this.hidden=true;document.getElementById('coverFallback').hidden=false">
+
+            <div class="cover-fallback" id="coverFallback" hidden>
+              <span class="fallback-eyebrow">A MOTIVATIONAL JOURNEY</span>
+              <strong>ALONE<br><em>BUT</em><br>UNSTOPPABLE</strong>
+              <span class="fallback-title">TURNING PAIN INTO POWER</span>
+              <span class="fallback-author">SHUBHAM BHARDWAJ</span>
+            </div>
+          </div>
+
+          <div class="book-reflection"></div>
+        </div>
+
+        <div class="hero-art-caption bottom-caption">
+          PAIN CAN BECOME PURPOSE.
+        </div>
+
+        <div class="round-stamp">
+          <span>READ</span>
+          <strong>YOUR<br>STORY</strong>
+          <span>REWRITE IT</span>
+        </div>
+
+        <div class="art-coordinate">A.B.U. / VOL. 01</div>
+      </div>
+
+      <div class="hero-values">
+        <span>COURAGE</span><i></i>
+        <span>DISCIPLINE</span><i></i>
+        <span>RESILIENCE</span><i></i>
+        <span>GROWTH</span>
+      </div>
+    </section>
+
+    <!-- MOVING LUXURY MESSAGE STRIP -->
+    <div class="ticker" aria-label="Book themes">
+      <div class="ticker-track">
+        <span>YOUR PAIN IS NOT YOUR IDENTITY</span><b>✦</b>
+        <span>YOUR PAST IS NOT YOUR LIMIT</span><b>✦</b>
+        <span>KEEP BECOMING</span><b>✦</b>
+        <span>YOUR PAIN IS NOT YOUR IDENTITY</span><b>✦</b>
+        <span>YOUR PAST IS NOT YOUR LIMIT</span><b>✦</b>
+        <span>KEEP BECOMING</span><b>✦</b>
       </div>
     </div>
 
-    <div class="part">
-      <div class="part-head">
-        <div class="part-number">II</div>
-        <div>
-          <div class="eyebrow">Face the inner war</div>
-          <h3>The Inner War: Facing Your Mind</h3>
-          <p class="part-intro">Explore the internal challenges named in the book, from overthinking and self-doubt to comparison and confidence.</p>
+    <!-- THE MESSAGE BEHIND THE BOOK -->
+    <section class="message-section section-wrap section-space" id="message">
+      <div class="section-index reveal">01 <span>/</span> THE MESSAGE</div>
+
+      <div class="message-grid">
+        <div class="message-heading reveal">
+          <p class="eyebrow">FOR THE QUIET FIGHTERS</p>
+          <h2 class="display-heading">
+            Some battles<br>
+            make no noise.<br>
+            <em>But they change us.</em>
+          </h2>
+
+          <div class="heading-ornament">
+            <span></span><span></span><span></span>
+          </div>
+        </div>
+
+        <div class="message-copy reveal">
+          <p class="lead-copy">
+            Not every struggle is visible. Sometimes the heaviest pressure
+            lives behind a quiet smile, an unfinished sentence, or a person
+            who keeps saying, “I’m fine.”
+          </p>
+
+          <p>
+            Students and young people can face expectations, comparison,
+            uncertainty, fear of failure and the feeling that everyone else
+            is moving ahead. It can be difficult to explain these experiences,
+            especially when the world expects you to have everything figured out.
+          </p>
+
+          <p>
+            <strong>Alone But Unstoppable — Turning Pain Into Power</strong>
+            is written around that human journey: acknowledging struggle,
+            understanding your thoughts, developing discipline and taking
+            practical steps toward a stronger future.
+          </p>
+
+          <blockquote>
+            <span class="quote-mark">“</span>
+            <p>
+              You do not need to have everything figured out today.
+              You only need the courage to take your next honest step.
+            </p>
+          </blockquote>
+
+          <p class="disclaimer-note">
+            This book offers motivation and reflection. It is not a substitute
+            for qualified professional support when that support is needed.
+          </p>
         </div>
       </div>
-      <div class="chapter-list">
-        <div class="chapter"><span class="chapter-num">06</span><span class="chapter-name">Loneliness: Curse or Hidden Power?</span></div>
-        <div class="chapter"><span class="chapter-num">07</span><span class="chapter-name">Overthinking &amp; Self-Doubt</span></div>
-        <div class="chapter"><span class="chapter-num">08</span><span class="chapter-name">Fear of Failure</span></div>
-        <div class="chapter"><span class="chapter-num">09</span><span class="chapter-name">Comparison &amp; Social Media Pressure</span></div>
-        <div class="chapter"><span class="chapter-num">10</span><span class="chapter-name">The Confidence Crisis</span></div>
-      </div>
-    </div>
+    </section>
 
-    <div class="part">
-      <div class="part-head">
-        <div class="part-number">III</div>
-        <div>
-          <div class="eyebrow">Shift your mindset</div>
-          <h3>The Turning Point: Shifting Your Mindset</h3>
-          <p class="part-intro">Move from recognising challenges to exploring strength, discipline, focus and lessons from failure.</p>
+    <!-- A SHORT EDITORIAL STATEMENT -->
+    <section class="manifesto-section">
+      <div class="manifesto-grain"></div>
+
+      <div class="manifesto-content reveal">
+        <p class="eyebrow">A THOUGHT TO CARRY WITH YOU</p>
+
+        <h2>
+          You may be walking alone.<br>
+          <em>You do not have to walk without purpose.</em>
+        </h2>
+
+        <p>
+          Let every challenge teach you something. Let every setback sharpen
+          your understanding. Let every new day become another chance to build
+          a life that feels true to you.
+        </p>
+
+        <a class="underlined-link" href="#journey">
+          Explore the book’s journey <span>↗</span>
+        </a>
+      </div>
+
+      <div class="manifesto-index">01—25</div>
+  </section>
+    
+    <!-- COMPLETE BOOK CONTENTS -->
+    <section class="journey-section section-wrap section-space" id="journey">
+      <div class="section-index reveal">02 <span>/</span> INSIDE THE BOOK</div>
+
+      <div class="journey-heading">
+        <div class="reveal">
+          <p class="eyebrow">THE TABLE OF CONTENTS</p>
+          <h2 class="display-heading">A journey in<br><em>five parts.</em></h2>
+        </div>
+
+        <div class="journey-intro reveal">
+          <p class="lead-copy">
+            From understanding the struggle to building a future with
+            intention, this book explores reflection, mindset and growth.
+          </p>
+          <p>
+            Explore the chapter titles below and discover the journey
+            without revealing the book’s exclusive bonus content.
+          </p>
         </div>
       </div>
-      <div class="chapter-list">
-        <div class="chapter"><span class="chapter-num">11</span><span class="chapter-name">Discovering Your Inner Strength</span></div>
-        <div class="chapter"><span class="chapter-num">12</span><span class="chapter-name">Discipline Over Motivation</span></div>
-        <div class="chapter"><span class="chapter-num">13</span><span class="chapter-name">Focus in a Distracted World</span></div>
-        <div class="chapter"><span class="chapter-num">14</span><span class="chapter-name">Building Mental Toughness</span></div>
-        <div class="chapter"><span class="chapter-num">15</span><span class="chapter-name">Learning from Failure</span></div>
-      </div>
-    </div>
 
-    <div class="part">
-      <div class="part-head">
-        <div class="part-number">IV</div>
-        <div>
-          <div class="eyebrow">Focus on transformation</div>
-          <h3>Becoming Unstoppable: Your Transformation</h3>
-          <p class="part-intro">The final part turns to habits, emotional resilience, dealing with negativity and designing your future.</p>
+      <div class="prelude-panel reveal">
+        <div class="prelude-mark">✦</div>
+        <div class="prelude-body">
+          <p class="mini-label">BEFORE THE JOURNEY BEGINS</p>
+          <h3>Start with an open mind.</h3>
+          <p class="prelude-list">
+            Gratitude · Preface · A Moment Before the Journey ·
+            Purpose of Writing This Book · Dedication ·
+            A Message About Struggle · Author’s Message to the Reader ·
+            Introduction · The Reality Students Face Today ·
+            Strength Is Built, Not Born · Before You Begin
+          </p>
         </div>
+        <span class="prelude-number">00</span>
       </div>
-      <div class="chapter-list">
-        <div class="chapter"><span class="chapter-num">16</span><span class="chapter-name">Daily Habits That Change Your Life</span></div>
-        <div class="chapter"><span class="chapter-num">17</span><span class="chapter-name">Emotional Strength &amp; Resilience</span></div>
-        <div class="chapter"><span class="chapter-num">18</span><span class="chapter-name">Ignoring Negativity &amp; Critics</span></div>
-        <div class="chapter"><span class="chapter-num">19</span><span class="chapter-name">Designing Your Future</span></div>
-        <div class="chapter"><span class="chapter-num">20</span><span class="chapter-name">Becoming Unstoppable</span></div>
-      </div>
-    </div>
 
-    <div class="bonus">
-      <div class="eyebrow">Plus a bonus section</div>
-      <h3>A little extra for the journey ahead.</h3>
-      <p class="lead">
-        The index also includes a bonus section. Explore the book to discover
-        its complete content and the material included beyond the main chapters.
+      <div class="parts-grid">
+
+        <article class="part-card reveal">
+          <div class="part-card-head">
+            <span class="part-label">PART 01</span>
+            <span class="roman-number">I</span>
+          </div>
+          <h3>The Struggle</h3>
+          <p class="part-subtitle">Understanding Your Pain</p>
+          <div class="part-divider"></div>
+          <ol>
+            <li><span>01</span><p>The Silent Battles Students Fight</p></li>
+            <li><span>02</span><p>Why No One Understands Your Pain</p></li>
+            <li><span>03</span><p>Feeling Lost in a Competitive World</p></li>
+            <li><span>04</span><p>Pressure from Family &amp; Expectations</p></li>
+            <li><span>05</span><p>When You Feel Like Giving Up</p></li>
+          </ol>
+        </article>
+
+        <article class="part-card reveal">
+          <div class="part-card-head">
+            <span class="part-label">PART 02</span>
+            <span class="roman-number">II</span>
+          </div>
+          <h3>The Inner War</h3>
+          <p class="part-subtitle">Facing Your Mind</p>
+          <div class="part-divider"></div>
+          <ol>
+            <li><span>06</span><p>Loneliness: Curse or Hidden Power?</p></li>
+            <li><span>07</span><p>Overthinking &amp; Self-Doubt</p></li>
+            <li><span>08</span><p>Fear of Failure</p></li>
+            <li><span>09</span><p>Comparison &amp; Social Media Pressure</p></li>
+            <li><span>10</span><p>The Confidence Crisis</p></li>
+          </ol>
+        </article>
+
+        <article class="part-card reveal">
+          <div class="part-card-head">
+            <span class="part-label">PART 03</span>
+            <span class="roman-number">III</span>
+          </div>
+          <h3>The Turning Point</h3>
+          <p class="part-subtitle">Shifting Your Mindset</p>
+          <div class="part-divider"></div>
+          <ol>
+            <li><span>11</span><p>Discovering Your Inner Strength</p></li>
+            <li><span>12</span><p>Discipline Over Motivation</p></li>
+            <li><span>13</span><p>Focus in a Distracted World</p></li>
+            <li><span>14</span><p>Building Mental Toughness</p></li>
+            <li><span>15</span><p>Learning From Failure</p></li>
+          </ol>
+        </article>
+
+        <article class="part-card reveal">
+          <div class="part-card-head">
+            <span class="part-label">PART 04</span>
+            <span class="roman-number">IV</span>
+          </div>
+          <h3>Becoming Unstoppable</h3>
+          <p class="part-subtitle">Your Transformation</p>
+          <div class="part-divider"></div>
+          <ol>
+            <li><span>16</span><p>Daily Habits That Change Your Life</p></li>
+            <li><span>17</span><p>Emotional Strength &amp; Resilience</p></li>
+            <li><span>18</span><p>Ignoring Negativity &amp; Critics</p></li>
+            <li><span>19</span><p>Designing Your Future</p></li>
+            <li><span>20</span><p>Becoming Unstoppable</p></li>
+          </ol>
+        </article>
+
+        <article class="part-card reveal">
+          <div class="part-card-head">
+            <span class="part-label">PART 05</span>
+            <span class="roman-number">V</span>
+          </div>
+          <h3>Living Unstoppable</h3>
+          <p class="part-subtitle">Taking Your Growth Further</p>
+          <div class="part-divider"></div>
+          <ol>
+            <li><span>21</span><p>Finding Your Life Purpose</p></li>
+            <li><span>22</span><p>Skills School Never Teaches</p></li>
+            <li><span>23</span><p>How Winners Think</p></li>
+            <li><span>24</span><p>Building Powerful Relationships</p></li>
+            <li><span>25</span><p>Choosing the Right Career Path</p></li>
+          </ol>
+        </article>
+
+        <article class="part-card bonus-card reveal">
+          <div class="part-card-head">
+            <span class="part-label">EXCLUSIVE EXTRA</span>
+            <span class="roman-number">✦</span>
+          </div>
+          <div class="bonus-emblem"><span>✧</span></div>
+          <h3>Bonus Section</h3>
+          <p class="part-subtitle">A little more for the road ahead.</p>
+          <div class="part-divider"></div>
+          <p class="bonus-copy">
+            An additional collection of motivational reflections and
+            resources, kept as a special extra for readers.
+          </p>
+          <span class="bonus-pill">EXCLUSIVE BONUS CONTENT</span>
+        </article>
+
+      </div>
+
+      <p class="contents-note">
+        Chapter titles are shown to help readers explore the book.
+        Page numbers are intentionally omitted from this website view.
       </p>
-    </div>
+    </section>
 
-    <div class="actions" style="justify-content:center;margin-top:32px">
-      <a class="btn btn-gold" href="#buy">EXPLORE BUYING OPTIONS ↗</a>
-    </div>
-  </div>
-</section>
+    <!-- READER BENEFITS -->
+    <section class="value-section section-space">
+      <div class="section-wrap">
+        <div class="section-index reveal">03 <span>/</span> WHY THIS BOOK</div>
 
-<section>
-  <div class="container">
-    <div class="eyebrow">Why consider this book?</div>
-    <h2>What makes this reading journey worth exploring?</h2>
-    <p class="lead">
-      The chapter structure brings together several challenges that students
-      may recognise. If these subjects matter to you, the contents can help
-      you decide whether the book matches your interests.
-    </p>
-    <div class="grid3">
-      <article class="card">
-        <div class="card-no">01 / RECOGNITION</div>
-        <h3>Put familiar struggles into words</h3>
-        <p>Explore chapter themes around expectations, feeling misunderstood, overthinking and fear of failure.</p>
-      </article>
-      <article class="card">
-        <div class="card-no">02 / REFLECTION</div>
-        <h3>Think about your response</h3>
-        <p>Examine themes such as discipline, focus, inner strength and learning from setbacks.</p>
-      </article>
-      <article class="card">
-        <div class="card-no">03 / DIRECTION</div>
-        <h3>Look toward the next step</h3>
-        <p>Explore the book's final section on daily habits, resilience, your future and becoming unstoppable.</p>
-      </article>
-    </div>
-    <div class="part" style="margin-top:28px">
-      <div class="eyebrow">A thoughtful choice</div>
-      <h3 style="font-family:Georgia,serif;font-size:27px;margin-top:10px">Choose a book for the message it offers you.</h3>
-      <p class="lead" style="margin-top:10px">
-        No book can guarantee success or remove life's challenges. Reading can,
-        however, give you an opportunity to pause, reflect and consider new
-        perspectives. Use the actual contents to decide if this book is for you.
-      </p>
-    </div>
-  </div>
-</section>
+        <div class="value-heading">
+          <h2 class="display-heading reveal">
+            Not a magic formula.<br><em>A place to begin.</em>
+          </h2>
+          <div class="value-intro reveal">
+            <p class="lead-copy">
+              Real growth is rarely one dramatic moment. More often,
+              it is a series of small decisions repeated with patience.
+            </p>
+            <p>
+              This book is designed for readers who want to reflect on
+              pressure, think about the habits they are building and
+              reconnect with the future they hope to create.
+            </p>
+          </div>
+        </div>
 
-<section class="dark" id="author">
-  <div class="container split">
-    <div>
-      <div class="eyebrow">Meet the author</div>
-      <h2>Shubham Bhardwaj</h2>
-      <p class="lead">Author of <em>Alone But Unstoppable — Turning Pain Into Power</em>.</p>
-      <p class="lead" style="margin-top:15px">
-        Through this book, Shubham brings together themes of student struggles,
-        self-belief, discipline and personal growth. Its four-part structure
-        invites readers to move from recognising challenges to reflecting
-        on how they approach the road 
+        <div class="value-grid">
+          <article class="value-card reveal">
+            <span class="value-index">01</span>
+            <div class="value-icon">✧</div>
+            <h3>Feel Seen</h3>
+            <p>
+              Explore themes many students find difficult to talk about,
+              including pressure, doubt and loneliness.
+            </p>
+          </article>
+
+          <article class="value-card reveal">
+            <span class="value-index">02</span>
+            <div class="value-icon">⌁</div>
+            <h3>Think Clearly</h3>
+            <p>
+              Reflect on comparison, fear, focus and the way you respond
+              when life does not go according to plan.
+            </p>
+          </article>
+
+          <article class="value-card reveal">
+            <span class="value-index">03</span>
+            <div class="value-icon">↗</div>
+            <h3>Build Consistency</h3>
+            <p>
+              Consider discipline, daily habits and small actions that
+              can support meaningful long-term progress.
+            </p>
+          </article>
+
+          <article class="value-card reveal">
+            <span class="value-index">04</span>
+            <div class="value-icon">◎</div>
+            <h3>Look Forward</h3>
+            <p>
+              Think about goals, relationships, skills and career
+              direction with greater intention.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDITORIAL QUOTE -->
+    <section class="quote-band">
+      <div class="quote-band-inner reveal">
+        <span class="giant-quote">“</span>
+        <p class="quote-line">
+          Your hardest chapter<br>
+          does not have to be<br>
+          <em>your final chapter.</em>
+        </p>
+        <p class="quote-attribution">
+          A thought inspired by the spirit of
+          <i>Alone But Unstoppable</i>
+        </p>
+      </div>
+    </section>
+
+    <!-- AUTHOR -->
+    <section class="author-section section-wrap section-space" id="author">
+      <div class="section-index reveal">04 <span>/</span> THE AUTHOR</div>
+
+      <div class="author-grid">
+        <div class="author-portrait reveal">
+          <div class="portrait-frame">
+            <span>SB</span>
+            <div class="portrait-ring"></div>
+          </div>
+          <p>THE VOICE BEHIND THE WORDS</p>
+          <span class="portrait-index">AUTHOR / 001</span>
+        </div>
+
+        <div class="author-copy reveal">
+          <p class="eyebrow">MEET THE AUTHOR</p>
+          <h2 class="display-heading">Shubham<br><em>Bhardwaj.</em></h2>
+
+          <p class="lead-copy">
+            A young author sharing a message of resilience,
+            self-belief and personal growth.
+          </p>
+
+          <p>
+            <strong>Alone But Unstoppable — Turning Pain Into Power</strong>
+            is built around the idea that struggle can become an opportunity
+            to reflect, learn and choose a new direction. Its themes speak
+            to students and young readers navigating expectations,
+            uncertainty and the pressure to succeed.
+          </p>
+
+          <p>
+            The aim is not to promise an effortless life. It is to encourage
+            readers to meet challenges with honesty, develop their strengths
+            and keep taking meaningful steps forward.
+          </p>
+
+          <p>
+            Every reader brings their own experience to a book. May these
+            pages offer a moment to pause, think and choose what you want
+            to carry into the next chapter of your life.
+          </p>
+
+          <div class="author-signature">
+            <span>Shubham Bhardwaj</span>
+            <small>AUTHOR</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GRATITUDE -->
+    <section class="gratitude-section section-wrap">
+      <div class="gratitude-card reveal">
+        <div class="gratitude-symbol">✦</div>
+        <p class="eyebrow">WITH GRATITUDE</p>
+        <h2>Every journey has<br><em>people behind it.</em></h2>
+        <p>
+          With appreciation for family, friends, readers and everyone who
+          encourages a young person to keep learning and creating.
+          Special acknowledgement is extended to Skylark Publications
+          and the people who supported this book’s journey.
+        </p>
+        <span class="gratitude-rule"></span>
+        <small>THANK YOU FOR BEING PART OF THE STORY</small>
+      </div>
+    </section>
+
+    <!-- PURCHASE SECTION -->
+    <section class="purchase-section section-space" id="get-book">
+      <div class="purchase-orb orb-left"></div>
+      <div class="purchase-orb orb-right"></div>
+
+      <div class="purchase-inner section-wrap">
+        <div class="section-index reveal">05 <span>/</span> YOUR NEXT CHAPTER</div>
+        <p class="eyebrow reveal">THE BOOK BY SHUBHAM BHARDWAJ</p>
+
+        <h2 class="purchase-heading reveal">
+          Turn the page.<br><em>Choose your next step.</em>
+        </h2>
+
+        <p class="purchase-description reveal">
+          If these themes speak to you, explore the book through your
+          preferred retailer and begin your reading journey.
+        </p>
+
+        <div class="purchase-product reveal">
+          <div class="product-mark">ABU</div>
+          <div class="product-copy">
+            <strong>Alone But Unstoppable</strong>
+            <span>Turning Pain Into Power</span>
+            <small>SHUBHAM BHARDWAJ</small>
+          </div>
+        </div>
+
+        <div class="purchase-actions reveal">
+          <a class="button button-gold"
+             href="https://amzn.in/d/0fR4NIG4"
+             target="_blank" rel="noopener noreferrer">
+            Buy on Amazon <span>↗</span>
+          </a>
+
+          <a class="button button-outline"
+             href="https://dl.flipkart.com/dl/alone-unstoppable-turning-pain-into-power/p/itm2b5d2960fb683?pid=9789347773938&amp;lid=LSTBOK9789347773938LKZMP8&amp;marketplace=FLIPKART"
+             target="_blank" rel="noopener noreferrer">
+            Explore on Flipkart <span>↗</span>
+          </a>
+        </div>
+
+        <p class="retailer-disclaimer">
+          Retailer availability, price, delivery and editions are controlled
+          by the respective platforms. Check each listing for current details.
+        </p>
+      </div>
+            </section>
+         
+    <!-- 06 / PREMIUM READER FAQ -->
+    <section class="faq-section section-wrap section-space" id="faq">
+      <div class="section-index reveal">06 <span>/</span> THE READER'S GUIDE</div>
+
+      <div class="faq-grid">
+        <div class="faq-heading reveal">
+          <p class="eyebrow">BEFORE THE FIRST PAGE</p>
+          <h2 class="display-heading">
+            A few questions.<br>
+            <em>A meaningful beginning.</em>
+          </h2>
+          <p>
+            A little clarity before you step into the world of
+            <strong>Alone But Unstoppable.</strong>
+          </p>
+
+          <div class="faq-side-note">
+            <span class="faq-side-icon">✦</span>
+            <div>
+              <strong>YOUR JOURNEY. YOUR PACE.</strong>
+              <p>Read thoughtfully. Reflect honestly. Keep moving forward.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-list reveal">
+          <details>
+            <summary>
+              What is <em>Alone But Unstoppable</em> about?
+              <span>+</span>
+            </summary>
+            <p>
+              <strong>Alone But Unstoppable — Turning Pain Into Power</strong>
+              is a motivational book by Shubham Bhardwaj. It explores themes
+              such as struggle, self-doubt, discipline, resilience, personal
+              habits and the choices that can shape your future.
+            </p>
+          </details>
+
+          <details>
+            <summary>Who may enjoy reading this book?<span>+</span></summary>
+            <p>
+              Students, young readers and anyone interested in personal growth
+              may find its themes relatable. Readers will bring different
+              experiences and perspectives to the book.
+            </p>
+          </details>
+
+          <details>
+            <summary>What will I find in the contents?<span>+</span></summary>
+            <p>
+              The website presents five parts and 25 chapter titles, together
+              with introductory material. The journey moves from understanding
+              challenges to reflecting on mindset, habits and future direction.
+            </p>
+          </details>
+
+          <details>
+            <summary>Why is the bonus section kept private?<span>+</span></summary>
+            <p>
+              The bonus section is intentionally presented as an exclusive
+              extra. Its individual topics and details are not displayed on
+              this website.
+            </p>
+          </details>
+
+          <details>
+            <summary>Where can I purchase the book?<span>+</span></summary>
+            <p>
+              Visit the purchase section and choose Amazon or Flipkart.
+              Each link opens its retailer listing, where you can check
+              current availability, price, edition and delivery information.
+            </p>
+          </details>
+
+          <details>
+            <summary>Can I purchase a digital edition here?<span>+</span></summary>
+            <p>
+              This website currently promotes the book and links to retailers.
+              It does not accept payments or unlock a protected digital book.
+              A paid online-reading service would require verified payment
+              processing and secure reader access.
+            </p>
+          </details>
+
+          <details>
+            <summary>Does the book replace professional support?<span>+</span></summary>
+            <p>
+              No. Motivational reading can encourage reflection, but it is
+              not a substitute for qualified medical, psychological or
+              counselling support when that support is needed.
+            </p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- 07 / A PERSONAL NOTE TO THE READER -->
+    <section class="reader-note-section">
+      <div class="reader-note-wrap section-wrap">
+        <div class="reader-note-frame reveal">
+          <div class="reader-note-top">
+            <span> A NOTE FOR THE JOURNEY </span>
+            <span>ABU / 001</span>
+          </div>
+
+          <div class="reader-note-symbol">✧</div>
+
+          <p class="eyebrow">TO EVERY READER</p>
+
+          <h2>
+            You are allowed<br>
+            to grow at your<br>
+            <em>own pace.</em>
+          </h2>
+
+          <p class="reader-note-copy">
+            You do not need to compare your beginning with somebody else's
+            middle. You do not need to have every answer before taking your
+            next step. Give yourself room to learn, make mistakes, adjust
+            your direction and try again.
+          </p>
+
+          <p class="reader-note-copy">
+            Let this book be a reminder to reflect on what matters to you,
+            take your goals seriously and keep building a future through
+            consistent effort.
+          </p>
+
+          <div class="reader-note-signature">
+            <span>Keep becoming.</span>
+            <i></i>
+          </div>
+
+          <div class="reader-note-bottom">
+            <span>COURAGE IN THE PROCESS</span>
+            <span>STRENGTH IN THE MAKING</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 08 / THE PURCHASE EXPERIENCE -->
+    <section class="purchase-section section-space" id="get-book">
+      <div class="purchase-orb orb-left"></div>
+      <div class="purchase-orb orb-right"></div>
+
+      <div class="purchase-inner section-wrap">
+        <div class="section-index reveal">
+          08 <span>/</span> YOUR NEXT CHAPTER
+        </div>
+
+        <p class="eyebrow reveal">A BOOK BY SHUBHAM BHARDWAJ</p>
+
+        <h2 class="purchase-heading reveal">
+          Turn the page.<br>
+          <em>Choose your next step.</em>
+        </h2>
+
+        <p class="purchase-description reveal">
+          Some books enter our lives as a story. Others give us a moment
+          to pause, reflect and consider where we want to go next.
+          Explore the book through your preferred retailer.
+        </p>
+
+        <div class="purchase-showcase reveal">
+          <div class="purchase-cover-mini">
+            <img
+              src="IMG_17813657597238498.jpg"
+              alt="Alone But Unstoppable book cover"
+              onerror="this.hidden=true;this.nextElementSibling.hidden=false">
+            <div class="mini-cover-fallback" hidden>ABU</div>
+          </div>
+
+          <div class="purchase-product">
+            <span class="product-edition">THE BOOK</span>
+            <h3>Alone But Unstoppable</h3>
+            <p class="product-subtitle">Turning Pain Into Power</p>
+            <p class="product-author">SHUBHAM BHARDWAJ</p>
+            <span class="product-divider"></span>
+            <p class="product-description">
+              A motivational journey through struggle, discipline,
+              resilience and personal growth.
+            </p>
+          </div>
+        </div>
+
+        <div class="purchase-actions reveal">
+          <a
+            class="button button-gold"
+            href="https://amzn.in/d/0fR4NIG4"
+            target="_blank"
+            rel="noopener noreferrer">
+            Explore on Amazon <span>↗</span>
+          </a>
+
+          <a
+            class="button button-outline"
+            href="https://dl.flipkart.com/dl/alone-unstoppable-turning-pain-into-power/p/itm2b5d2960fb683?pid=9789347773938&amp;lid=LSTBOK9789347773938LKZMP8&amp;marketplace=FLIPKART"
+            target="_blank"
+            rel="noopener noreferrer">
+            Explore on Flipkart <span>↗</span>
+          </a>
+        </div>
+
+        <div class="purchase-trust-row reveal">
+          <span>✦ CHOOSE YOUR RETAILER</span>
+          <span>✦ CHECK CURRENT LISTING DETAILS</span>
+          <span>✦ BEGIN YOUR READING JOURNEY</span>
+        </div>
+
+        <p class="retailer-disclaimer">
+          Pricing, stock, format and delivery are determined by the retailer.
+          Please confirm the details on the retailer's website before ordering.
+        </p>
+      </div>
+    </section>
+
+    <!-- 09 / FINAL CINEMATIC CALL TO ACTION -->
+    <section class="closing-section">
+      <div class="closing-line"></div>
+
+      <div class="closing-inner reveal">
+        <p class="eyebrow">THE STORY IS STILL YOURS</p>
+
+        <div class="closing-ornament">✦</div>
+
+        <h2>
+          Be patient with<br>
+          the person you are<br>
+          <em>becoming.</em>
+        </h2>
+
+        <p>
+          One page. One decision. One day at a time.
+        </p>
+
+        <a class="button button-gold" href="#get-book">
+          Explore the Book <span>↗</span>
+        </a>
+
+        <a class="closing-secondary-link" href="#journey">
+          Revisit the chapter journey ↓
+        </a>
+      </div>
+
+      <div class="closing-ghost">UNSTOPPABLE</div>
+      <div class="closing-bottom-label">ALONE BUT UNSTOPPABLE · TURNING PAIN INTO POWER</div>
+    </section>
+
+    <!-- 10 / PREMIUM WEBSITE FOOTER -->
+    <footer class="site-footer">
+      <div class="footer-main section-wrap">
+        <a class="brand footer-brand" href="#top" aria-label="Back to top">
+          <span class="brand-monogram">A<span>B</span>U</span>
+          <span class="brand-name">
+            <strong>ALONE BUT UNSTOPPABLE</strong>
+            <small>TURNING PAIN INTO POWER</small>
+          </span>
+        </a>
+
+        <div class="footer-message">
+          <p class="footer-label">THE AUTHOR</p>
+          <p class="footer-author"><strong>Shubham Bhardwaj</strong></p>
+          <p class="footer-small">
+            A message of resilience, self-belief and personal growth.
+          </p>
+        </div>
+
+        <div class="footer-navigation">
+          <p class="footer-label">EXPLORE</p>
+          <a href="#message">The Message</a>
+          <a href="#journey">Book Contents</a>
+          <a href="#author">The Author</a>
+          <a href="#faq">Frequently Asked Questions</a>
+          <a href="#get-book">Purchase the Book</a>
+        </div>
+
+        <div class="footer-navigation footer-retailers">
+          <p class="footer-label">FIND THE BOOK</p>
+          <a href="https://amzn.in/d/0fR4NIG4"
+             target="_blank" rel="noopener noreferrer">
+            Amazon ↗
+          </a>
+          <a href="https://dl.flipkart.com/dl/alone-unstoppable-turning-pain-into-power/p/itm2b5d2960fb683?pid=9789347773938&amp;lid=LSTBOK9789347773938LKZMP8&amp;marketplace=FLIPKART"
+             target="_blank" rel="noopener noreferrer">
+            Flipkart ↗
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-quote section-wrap">
+        <span>“</span>
+        <p>Your past is a chapter. It does not have to be your entire story.</p>
+      </div>
+
+      <div class="footer-bottom section-wrap">
+        <span>
+          © <span id="year"></span> Shubham Bhardwaj. All rights reserved.
+        </span>
+
+        <span class="footer-motto">
+          COURAGE · DISCIPLINE · GROWTH
+        </span>
+
+        <a href="#top">BACK TO TOP ↑</a>
+      </div>
+    </footer>
+
+    <!-- FLOATING BACK-TO-TOP CONTROL -->
+    <a
+      class="back-to-top"
+      id="backToTop"
+      href="#top"
+      aria-label="Back to top">
+      ↑
+    </a>
+
+  </main>
+</body>
+  </html>
+          
