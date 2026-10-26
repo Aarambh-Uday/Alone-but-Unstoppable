@@ -1118,3 +1118,235 @@ blockquote {
 .amazon-button {
   color: #14100a;
   background: lin
+/* =========================================
+   MOBILE ALIGNMENT FIX — ADD AT END
+   ========================================= */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  overflow-x: clip;
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  overflow-x: clip;
+}
+
+img,
+video,
+iframe {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Main sections should never exceed the screen */
+section,
+main,
+header,
+footer {
+  max-width: 100%;
+  min-width: 0;
+}
+
+/* Fix containers */
+.container,
+.section-container,
+.hero-container,
+.nav-container,
+.footer-container {
+  width: min(1180px, calc(100% - 40px));
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Fix hero text and spacing */
+.hero,
+.hero-section {
+  width: 100%;
+  padding: 64px 0 72px;
+}
+
+.hero h1,
+.hero-section h1 {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 0 22px;
+  font-size: clamp(2.65rem, 11vw, 5.5rem);
+  line-height: 1.04;
+  letter-spacing: -0.035em;
+  overflow-wrap: break-word;
+}
+
+.hero p,
+.hero-section p {
+  max-width: 600px;
+  font-size: clamp(1rem, 4.2vw, 1.2rem);
+  line-height: 1.8;
+}
+
+/* Prevent navigation from shrinking into one tiny line */
+header .container,
+.nav-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
+header nav,
+header nav ul,
+.nav-links {
+  max-width: 100%;
+  flex-wrap: wrap;
+  gap: 12px 18px;
+}
+
+/* Make buttons comfortable to tap */
+.hero-actions,
+.hero-buttons,
+.cta-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.btn,
+.button,
+.cta-button,
+.primary-button,
+.secondary-button {
+  max-width: 100%;
+}
+
+/* Fix book / purchase layouts */
+.purchase-showcase {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+}
+
+.purchase-product,
+.purchase-cover-mini {
+  min-width: 0;
+}
+
+/* Fix cards and grids */
+.value-grid,
+.benefits-grid,
+.features-grid,
+.cards-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.part-card,
+.chapter-card,
+.journey-card,
+.content-card,
+.value-card,
+.feature-card {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+/* Fix footer */
+.footer-container {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.footer-navigation {
+  justify-content: flex-start;
+}
+
+/* Small mobile phones */
+@media (max-width: 600px) {
+  .container,
+  .section-container,
+  .hero-container,
+  .nav-container,
+  .footer-container {
+    width: calc(100% - 32px);
+  }
+
+  .hero,
+  .hero-section {
+    padding: 52px 0 60px;
+  }
+
+  .hero h1,
+  .hero-section h1 {
+    font-size: clamp(2.5rem, 12vw, 3.7rem);
+    line-height: 1.06;
+  }
+
+  .hero p,
+  .hero-section p {
+    font-size: 1rem;
+    line-height: 1.75;
+  }
+
+  .hero-actions,
+  .hero-buttons,
+  .cta-actions {
+    align-items: stretch;
+  }
+
+  .hero-actions > a,
+  .hero-buttons > a,
+  .cta-actions > a {
+    max-width: 100%;
+  }
+
+  .value-grid,
+  .benefits-grid,
+  .features-grid,
+  .cards-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .purchase-showcase {
+    grid-template-columns: minmax(0, 1fr);
+    padding: 22px 16px;
+    gap: 28px;
+  }
+
+  .purchase-cover-mini {
+    width: min(75%, 250px);
+    margin: 0 auto;
+  }
+
+  .purchase-product {
+    text-align: center;
+  }
+
+  .product-divider {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .purchase-buttons,
+  .store-buttons,
+  .purchase-actions {
+    justify-content: center;
+  }
+
+  .reader-note-frame {
+    padding: 32px 20px;
+  }
+
+  h2 {
+    font-size: clamp(2rem, 9vw, 3rem);
+  }
+}
